@@ -1,0 +1,14 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "weather app",
+  "main": "app.js",
+  "scripts": {
+    "compile-scss": "node-sass scss/main.scss css/style.css -w"
+  },
+  "author": "Vitalii Kotelianets",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
