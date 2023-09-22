@@ -88,7 +88,7 @@ body {
       overflow: hidden; } }
 
 #signUpMessage {
-  display: block;
+  display: none;
   width: 85%;
   text-align: center;
   margin: 10% auto;
@@ -129,7 +129,7 @@ body {
     margin-bottom: 45px;
     text-align: center;
     font-family: 'Roboto Slab';
-    margin-top: 150px; }
+    margin-top: 30px; }
     @media screen and (max-width: 768px) {
       .search__title {
         font-size: 30px; } }
