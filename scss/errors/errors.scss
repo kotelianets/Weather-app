@@ -1,9 +1,9 @@
 //// EMPTY INNPUT MESSAGE /////
 .errorMessage {
-  visibility: visible;
+  display: none;
+  background: red;
   width: 450px;
   text-align: center;
-  background: red;
   margin: 10px auto;
   font-size: 25px;
   border-radius: 5px;
