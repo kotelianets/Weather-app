@@ -13,7 +13,7 @@ function getWeatherData() {
   if (inputValue === '') {
     errorMessage.style.visibility = 'visible';
     setTimeout(() => {
-      errorMessage.style.display = 'none';
+      errorMessage.style.visibility = 'hidden';
     }, 3000);
     return;
   }
