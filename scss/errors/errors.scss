@@ -1,11 +1,19 @@
 //// EMPTY INNPUT MESSAGE /////
-.errorMessage {
+
+.error-message {
   display: none;
-  background: red;
-  width: 450px;
-  text-align: center;
-  margin: 10px auto;
-  font-size: 25px;
+  position: absolute;
+  top: 105%;
+  left: 50;
+  visibility: visible;
+  background-color: red;
+  color: white;
+  padding: 5px;
   border-radius: 5px;
-  animation: errorAnimation 0.5s ease-out;
+  width: 50%;
+  text-align: center;
+}
+
+.error-message.active {
+  visibility: visible;
 }
