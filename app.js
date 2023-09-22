@@ -9,7 +9,7 @@ function getWeatherData() {
   const inputValue = input.value.trim();
   console.log(inputValue);
   input.value = '';
-  const url = `http://api.weatherapi.com/v1/current.json?key=${myApiKey}&q=${inputValue}&aqi=no`;
+  const url = `https://api.weatherapi.com/v1/current.json?key=${myApiKey}&q=${inputValue}&aqi=no`;
   if (inputValue === '') {
     errorMessage.style.display = 'block';
     setTimeout(() => {
