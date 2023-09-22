@@ -31,10 +31,22 @@ body {
     .header__logo--image {
       height: 80px;
       align-self: center; }
+      @media screen and (max-width: 768px) {
+        .header__logo--image {
+          height: 50px; } }
+      @media screen and (max-width: 425px) {
+        .header__logo--image {
+          height: 30px; } }
   .header__title {
     font-family: 'Roboto Slab';
     font-size: 30px;
     color: #6ea9e0; }
+    @media screen and (max-width: 768px) {
+      .header__title {
+        font-size: 20px; } }
+    @media screen and (max-width: 425px) {
+      .header__title {
+        display: none; } }
   .header__buttons--login {
     display: block;
     padding: 10px 20px;
@@ -46,10 +58,34 @@ body {
     cursor: pointer;
     transition: all 0.2s;
     text-transform: uppercase; }
+    @media screen and (max-width: 426px) {
+      .header__buttons--login {
+        padding: 7px 40px;
+        font-size: 15px; } }
     .header__buttons--login:hover {
       transform: translateY(-5px);
       color: #a6d538;
       border: 2px solid #d7e60b; }
+
+.username {
+  display: none;
+  color: #b5ef42;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 200;
+  border-bottom: 1px solid black; }
+  @media screen and (max-width: 768px) {
+    .username {
+      font-size: 20px;
+      overflow: hidden; } }
+  @media screen and (max-width: 426px) {
+    .username {
+      font-size: 18px;
+      overflow: hidden; } }
+  @media screen and (max-width: 325px) {
+    .username {
+      font-size: 15px;
+      overflow: hidden; } }
 
 #signUpMessage {
   display: block;
@@ -64,10 +100,21 @@ body {
   color: rgba(124, 210, 70, 0.989);
   padding: 10px;
   border-radius: 20px; }
+  @media screen and (max-width: 426px) {
+    #signUpMessage {
+      padding: 15px;
+      font-size: 20px; } }
+  @media screen and (max-width: 375px) {
+    #signUpMessage {
+      padding: 15px;
+      font-size: 15px; } }
 
 .section {
   margin-top: 150px;
   display: none; }
+  @media screen and (max-width: 768px) {
+    .section {
+      margin-top: -80px; } }
 
 .search {
   display: flex;
@@ -81,7 +128,14 @@ body {
     text-transform: uppercase;
     margin-bottom: 45px;
     text-align: center;
-    font-family: 'Roboto Slab'; }
+    font-family: 'Roboto Slab';
+    margin-top: 150px; }
+    @media screen and (max-width: 768px) {
+      .search__title {
+        font-size: 30px; } }
+    @media screen and (max-width: 425px) {
+      .search__title {
+        font-size: 20px; } }
   .search__form {
     display: flex; }
     .search__form--input {
@@ -95,6 +149,10 @@ body {
       background: rgba(75, 72, 72, 0.653);
       padding-left: 20px;
       color: white; }
+      @media screen and (max-width: 425px) {
+        .search__form--input {
+          width: 150px;
+          font-size: 20px; } }
       .search__form--input::placeholder {
         color: rgba(144, 227, 255, 0.347); }
       .search__form--input:focus {
@@ -109,12 +167,18 @@ body {
       color: #fff;
       font-weight: 200;
       cursor: pointer; }
+      @media screen and (max-width: 425px) {
+        .search__form--btn {
+          font-size: 20px; } }
 
 .section-weather {
   margin-top: 10rem;
   padding-bottom: 10rem;
   display: flex;
   justify-content: center; }
+  @media screen and (max-width: 426px) {
+    .section-weather {
+      margin-top: 4rem; } }
 
 .weather-card {
   width: 500px;
@@ -126,6 +190,10 @@ body {
   color: #5f5233;
   backdrop-filter: blur(15px);
   box-shadow: 0px 2px 10px 5px white; }
+  @media screen and (max-width: 426px) {
+    .weather-card {
+      width: 350px;
+      text-align: center; } }
   .weather-card__title {
     width: 80%;
     text-align: center;
@@ -134,11 +202,18 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
     padding: 10px; }
+    @media screen and (max-width: 426px) {
+      .weather-card__title {
+        font-size: 20px;
+        border-bottom: 1px solid black; } }
   .weather-card__temperature {
     margin-top: 10px;
     margin-bottom: 25px;
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace; }
+    @media screen and (max-width: 426px) {
+      .weather-card__temperature {
+        font-size: 30px; } }
   .weather-card__cloud {
     font-weight: 600;
     font-family: 'Courier New', Courier, monospace; }
@@ -151,6 +226,9 @@ body {
     font-size: 30px;
     margin-bottom: 15px;
     text-align: center; }
+    @media screen and (max-width: 426px) {
+      .weather-card__feelsLike {
+        font-size: 20px; } }
 
 @keyframes errorAnimation {
   0% {
@@ -245,11 +323,3 @@ body {
 @media screen and (max-width: 600px) {
   .modal__content {
     width: 90%; } }
-
-.username {
-  display: none;
-  color: #b5ef42;
-  font-size: 30px;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 200;
-  border-bottom: 1px solid black; }

@@ -14,12 +14,24 @@
     &--image {
       height: 80px;
       align-self: center;
+      @media screen and (max-width: 768px) {
+        height: 50px;
+      }
+      @media screen and (max-width: 425px) {
+        height: 30px;
+      }
     }
   }
   &__title {
     font-family: 'Roboto Slab';
     font-size: 30px;
     color: rgb(110, 169, 224);
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+    @media screen and (max-width: 425px) {
+      display: none;
+    }
   }
 
   &__buttons {
@@ -34,6 +46,10 @@
       cursor: pointer;
       transition: all 0.2s;
       text-transform: uppercase;
+      @media screen and (max-width: 426px) {
+        padding: 7px 40px;
+        font-size: 15px;
+      }
 
       &:hover {
         transform: translateY(-5px);
@@ -41,6 +57,26 @@
         border: 2px solid rgb(215, 230, 11);
       }
     }
+  }
+}
+.username {
+  display: none;
+  color: #b5ef42;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 200;
+  border-bottom: 1px solid black;
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+    overflow: hidden;
+  }
+  @media screen and (max-width: 426px) {
+    font-size: 18px;
+    overflow: hidden;
+  }
+  @media screen and (max-width: 325px) {
+    font-size: 15px;
+    overflow: hidden;
   }
 }
 
@@ -57,4 +93,12 @@
   color: rgba(124, 210, 70, 0.989);
   padding: 10px;
   border-radius: 20px;
+  @media screen and (max-width: 426px) {
+    padding: 15px;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 375px) {
+    padding: 15px;
+    font-size: 15px;
+  }
 }
