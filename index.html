@@ -23,7 +23,7 @@
       <header>
         <div class="header">
           <div class="header__logo">
-            <a href="#">
+            <a href="https://weather.com/?Goto=Redirected" target="_blank">
               <img
                 src="images/weather.png"
                 alt="Weather logo"
@@ -33,12 +33,17 @@
           </div>
           <div class="header__title">Weather App</div>
           <div class="header__buttons">
-            <button class="header__buttons--login" id="loginBtn">Login</button>
+            <button class="header__buttons--login" id="signUpBtn">
+              Sign Up
+            </button>
+            <div class="username" id="user"></div>
           </div>
         </div>
+
+        <div id="signUpMessage">Please sign up to use the app</div>
       </header>
 
-      <section class="section">
+      <section class="section" id="weather-search-block">
         <div class="search">
           <div class="search__title">I want to check the weather in...</div>
           <form action="" class="search__form">
@@ -59,6 +64,34 @@
       </section>
 
       <section class="section-weather" id="section-weather"></section>
+    </div>
+    <!-- Sign-up Modal -->
+    <div class="modal" id="signupModal">
+      <div class="modal__content">
+        <span class="modal__content__close" id="closeModal">&times;</span>
+        <h2>Sign Up</h2>
+        <form class="form" id="signupForm">
+          <label class="form__label" for="email">Email:</label>
+          <input
+            class="form__input"
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+          <label class="form__label" for="password">Password:</label>
+          <input
+            class="form__input"
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            required
+          />
+          <button class="form__button" type="submit" id="signupButton">
+            Sign Up
+          </button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
