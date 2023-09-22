@@ -3,6 +3,9 @@
 @import './base/container.scss';
 @import './layout/header.scss';
 @import './layout/search-section.scss';
+@import './layout/weather-card.scss';
+@import './animations/animations.scss';
+@import './errors/errors.scss';
 body {
   box-sizing: border-box;
   margin: 0;

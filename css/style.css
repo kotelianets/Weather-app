@@ -8,11 +8,10 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #508bcc; }
 
-.container {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/istockphoto-680906456-170667a.jpg);
+body {
+  background: url(../images/istockphoto-680906456-170667a.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
   padding-top: 30px; }
 
 .header {
@@ -24,7 +23,8 @@
   width: 80%;
   margin: 0 auto;
   box-shadow: 0px 1px 15px 5px black;
-  padding: 10px; }
+  padding: 10px;
+  margin-top: 30px; }
   .header__logo {
     display: flex; }
     .header__logo--image {
@@ -62,7 +62,9 @@
     font-size: 60px;
     letter-spacing: 5px;
     text-transform: uppercase;
-    margin-bottom: 45px; }
+    margin-bottom: 45px;
+    text-align: center;
+    font-family: 'Roboto Slab'; }
   .search__form {
     display: flex; }
     .search__form--input {
@@ -90,6 +92,64 @@
       color: #fff;
       font-weight: 200;
       cursor: pointer; }
+
+.section-weather {
+  margin-top: 10rem;
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: center; }
+
+.weather-card {
+  width: 500px;
+  background-color: rgba(211, 166, 166, 0.309);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  color: #5f5233;
+  backdrop-filter: blur(15px);
+  box-shadow: 0px 2px 10px 5px white; }
+  .weather-card__title {
+    width: 80%;
+    text-align: center;
+    border-bottom: 2px solid black;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    padding: 10px; }
+  .weather-card__temperature {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace; }
+  .weather-card__cloud {
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace; }
+  .weather-card__feelsLike {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 40px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-align: center; }
+
+@keyframes errorAnimation {
+  0% {
+    transform: translateY(10px); }
+  100% {
+    transform: translateY(0); } }
+
+.errorMessage {
+  display: none;
+  width: 450px;
+  text-align: center;
+  background: red;
+  margin: 10px auto;
+  font-size: 25px;
+  border-radius: 5px;
+  animation: errorAnimation 0.5s ease-out; }
 
 body {
   box-sizing: border-box;
