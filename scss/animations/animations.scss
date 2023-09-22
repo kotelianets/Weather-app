@@ -2,10 +2,10 @@
 @keyframes errorAnimation {
   0% {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translate(-50%, -50%) scale(0.5); /* Start small and transparent */
   }
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translate(-50%, -50%) scale(1); /* End at full size and opacity */
   }
 }
