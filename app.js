@@ -11,7 +11,7 @@ function getWeatherData() {
   input.value = '';
   const url = `https://api.weatherapi.com/v1/current.json?key=${myApiKey}&q=${inputValue}&aqi=no`;
   if (inputValue === '') {
-    errorMessage.style.display = 'block';
+    errorMessage.style.visibility = 'visible';
     setTimeout(() => {
       errorMessage.style.display = 'none';
     }, 3000);
