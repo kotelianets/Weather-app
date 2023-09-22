@@ -43,3 +43,18 @@
     }
   }
 }
+
+#signUpMessage {
+  display: block;
+  width: 85%;
+  text-align: center;
+  margin: 10% auto;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 200;
+  background: #4c9499ad;
+  color: rgba(124, 210, 70, 0.989);
+  padding: 10px;
+  border-radius: 20px;
+}
